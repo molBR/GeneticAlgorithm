@@ -3,48 +3,45 @@ from geneticIndividual import *
 
 class GeneticEnviroment():
 
-	def __init__ (self):
+	def __init__ (self,mutationProb,crossProb,tamFilhos,tamGen):
 		self.populationList = []
-		self.mutationProb = 0.2
-		self.crossProb = 1.0
-		self.tamPopMax = 10000
-		self.tamFilhos = 500
+		self.mutationProb = mutationProb #0.2
+		self.crossProb = crossProb#1.0
+		self.tamFilhos = tamFilhos#500
 		self.bestFitInd = None
-		self.tamGen = 10000
+		self.tamGen = tamGen#10000
 		self.run()
 
 	def getMutationProb(self):
 		return self.mutationProb
 
+	def getCrossProb(self):
+		return self.crossProb
+
 	def startPop(self):
-		eva = []
-		adao = []
-		for i in range(0,30):
-			eva.append(str(0))
-			adao.append(str(1))
-		#self.populationList.append(GeneticIndividual(adao))		
 		for i in range (0,100):
 			self.populationList.append(GeneticIndividual(""))
-			self.bestFit(self.populationList[i])
-			print self.populationList[i].getTrueY()
-		#self.populationList.append(GeneticIndividual(eva))
-		#for i in range (0,100):
-		#	print self.populationList[i].getgeneticCode()
-
-		self.crossingOver(self.populationList[0].getgeneticCode(),self.populationList[99].getgeneticCode())
-		print "BEST: "  + str(self.bestFitInd.getgeneticCode())
-
+			self.bestFit(self.populationList[i])		
 
 	def acasalamento(self):
-		for i in range(self.tamFilhos):
-			indPai = random.randint(0,len(self.populationList)-1)
-			indMae = random.randint(0,len(self.populationList)-1)
-			if indPai == indMae:
-				i = i-1
-			else:
-				filho = GeneticIndividual(self.crossingOver(self.populationList[indPai].getgeneticCode(),self.populationList[indMae].getgeneticCode()))
-				self.bestFit(filho)
-				self.populationList.append(filho)
+		x = random.random()
+		if x<=self.getCrossProb():
+			for i in range(self.tamFilhos):
+				indPai = random.randint(0,len(self.populationList)-1)
+				indMae = random.randint(0,len(self.populationList)-1)
+				if indPai == indMae:
+					i = i-1
+				else:
+					filho = GeneticIndividual(self.crossingOver(self.populationList[indPai].getgeneticCode(),self.populationList[indMae].getgeneticCode()))
+					x = random.random()
+					if x<=self.getMutationProb():
+						filho.mutateGene()
+					else:
+						print "NAO"
+					self.bestFit(filho)
+					self.populationList.append(filho)
+		else: 
+			return
 
 	def bestFit(self,gene1):
 		if self.bestFitInd == None:
@@ -59,13 +56,10 @@ class GeneticEnviroment():
 		while(controle<self.tamGen):
 			self.acasalamento()
 			controle = controle+1
-			print "Geracao: " + str(controle)
+			#print "Geracao: " + str(controle)
 		print "BEST: "  + str(self.bestFitInd.getgeneticCode())
 		print "Y:" + str(self.bestFitInd.getTrueY())
 		print "X:" + str(self.bestFitInd.getTrueX())
-
-
-			
 
 	def crossingOver(self,pai,mae):
 		filho = []
@@ -121,6 +115,5 @@ class GeneticEnviroment():
 		filho = (intPai + intMae + decPai1 + decMae1 + decPai2 + 
 			decMae2 + decPai3 + decMae3 + decPai4 + decMae4)
 		return filho
-
 
 
