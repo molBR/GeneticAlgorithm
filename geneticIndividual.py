@@ -64,8 +64,17 @@ class GeneticIndividual():
 		valorDec4 = int(deca3,2) + int(decb3,2) + int(decc3,2)
 		self.TrueX = float(str(valorInt) + "." + str(valorDec1) + str(valorDec2) + str(valorDec3) + str(valorDec4))
 	
+	def mutateGene(self):
+		print "MUTATION"
+		auxList = []
+		x = random.randint(0,28)
+		for i in range(0,29):
+			auxList.append(self.geneticCode[i])
+		if auxList[x] == '1':
+			auxList[x] = '0'
+		else:
+			auxList[x] = '1'
+
+
 	def fitnessFunction(self):
 		self.TrueY = math.sin(self.TrueX) + math.cos(math.sqrt(3)*self.TrueX)
-
-
-
