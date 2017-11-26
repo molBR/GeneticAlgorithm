@@ -1,16 +1,26 @@
 import random
-from geneticIndividual import *
+import matplotlib.pyplot as plt
+import geneticIndividualProb1
+import geneticIndividualProb2	
+
 
 class GeneticEnviroment():
 
-	def __init__ (self,mutationProb,crossProb,tamFilhos,tamGen):
+	def __init__ (self,mutationProb,crossProb,tamFilhos,tamGen,lutadores,indivInfo):
 		self.populationList = []
 		self.mutationProb = mutationProb #0.2
 		self.crossProb = crossProb#1.0
 		self.tamFilhos = tamFilhos#500
 		self.bestFitInd = None
 		self.tamGen = tamGen#10000
-		self.run()
+		self.lutadores = lutadores
+		if indivInfo == 0:
+			self.indiv = geneticIndividualProb1
+		else:
+			self.indiv = geneticIndividualProb2
+		self.bestZs = []
+		self.graph = self.run()
+
 
 	def getMutationProb(self):
 		return self.mutationProb
@@ -19,101 +29,69 @@ class GeneticEnviroment():
 		return self.crossProb
 
 	def startPop(self):
-		for i in range (0,100):
-			self.populationList.append(GeneticIndividual(""))
+		for i in range (0,self.tamFilhos):
+			self.populationList.append(self.indiv.GeneticIndividual("",""))
 			self.bestFit(self.populationList[i])		
 
+
+
 	def acasalamento(self):
-		x = random.random()
-		if x<=self.getCrossProb():
-			for i in range(self.tamFilhos):
-				indPai = random.randint(0,len(self.populationList)-1)
-				indMae = random.randint(0,len(self.populationList)-1)
-				if indPai == indMae:
-					i = i-1
-				else:
-					filho = GeneticIndividual(self.crossingOver(self.populationList[indPai].getgeneticCode(),self.populationList[indMae].getgeneticCode()))
-					x = random.random()
-					if x<=self.getMutationProb():
-						filho.mutateGene()
+		numCasos = self.tamFilhos*2
+		for i in range(0,numCasos):
+			paiMae = []
+			for j in range(0,2):
+				listaGene = []
+				for k in range(0,self.lutadores):
+					auxNum = random.randint(0,len(self.populationList)-1)
+					auxGene = self.populationList[auxNum]
+					if auxGene not in listaGene:
+						listaGene.append(auxGene)
 					else:
-						print "NAO"
-					self.bestFit(filho)
-					self.populationList.append(filho)
-		else: 
-			return
+						k = k - 1
+				paiMae.append(self.torneio(listaGene))
+			x = random.random()
+			if(x<=self.crossProb):
+				filhoX = self.indiv.crossingOver(paiMae[0].getgeneticCodeX(),paiMae[1].getgeneticCodeX())
+				filhoY = self.indiv.crossingOver(paiMae[0].getgeneticCodeY(),paiMae[1].getgeneticCodeY())
+				filho = self.indiv.GeneticIndividual(filhoX,filhoY)
+				filho.mutate(self.mutationProb)
+				self.bestFit(filho)
+				self.populationList.append(filho)
+
+	def torneio(self,listaGene):
+		campeao = listaGene[0]
+		for i in (0,len(listaGene)-1):
+			if listaGene[i].getTrueZ() < campeao.getTrueZ():
+				campeao = listaGene[i]
+		return campeao
 
 	def bestFit(self,gene1):
 		if self.bestFitInd == None:
+			self.bestZs.append(gene1.getTrueZ())
 			self.bestFitInd = gene1
 		else:
-			if(gene1.getTrueY()>self.bestFitInd.getTrueY()):
+			if(gene1.getTrueZ()<self.bestFitInd.getTrueZ()):
 				self.bestFitInd = gene1
+				self.bestZs.append(gene1.getTrueZ())
 
 	def run(self):
 		self.startPop()
 		controle = 0
 		while(controle<self.tamGen):
+			random.seed()
 			self.acasalamento()
 			controle = controle+1
+			if controle % 3 == 0:
+				self.populationList = self.populationList[self.tamFilhos:]
 			#print "Geracao: " + str(controle)
-		print "BEST: "  + str(self.bestFitInd.getgeneticCode())
+		print "BEST: "  + str(self.bestFitInd.getgeneticCodeX())
 		print "Y:" + str(self.bestFitInd.getTrueY())
 		print "X:" + str(self.bestFitInd.getTrueX())
+		print "Z:" + str(self.bestFitInd.getTrueZ())
+		print len(self.bestZs)
+		plt.plot(self.bestZs)
+		plt.ylabel('Menores Valores de Z')
+		plt.xlabel('Numero de individuos')
+		return plt
 
-	def crossingOver(self,pai,mae):
-		filho = []
-		#---------------------- INTEIRO
-		index1 = random.randint(1,8)
-		index2 = 9 - index1
-
-		intMae = mae[:9]
-		intPai = pai[:9]
-		intMae = intMae[index1:]
-		intPai = intPai[:index1]
-		#----------------------- DECIMAL1
-		index1 = random.randint(1,4)
-		index2 = 5 - index1
-
-		decMae1 = mae[9:]
-		decMae1 = decMae1[:5]
-		decPai1 = pai[9:]
-		decPai1 = decPai1[:5]
-		decMae1 = decMae1[index1:]
-		decPai1 = decPai1[:index1]
-		#-----------------------DECIMAL2
-		index1 = random.randint(1,4)
-		index2 = 5 - index1
-
-		decMae2 = mae[14:]
-		decMae2 = decMae2[:5]
-		decPai2 = pai[14:]
-		decPai2 = decPai2[:5]
-		decMae2 = decMae2[index1:]
-		decPai2 = decPai2[:index1]
-		#-----------------------DECIMAL3
-		index1 = random.randint(1,4)
-		index2 = 5 - index1
-
-		decMae3 = mae[19:]
-		decMae3 = decMae3[:5]
-		decPai3 = pai[19:]
-		decPai3 = decPai3[:5]
-		decMae3 = decMae3[index1:]
-		decPai3 = decPai3[:index1]
-		#-----------------------DECIMAL4
-		index1 = random.randint(1,4)
-		index2 = 5 - index1
-
-		decMae4 = mae[24:]
-		decMae4 = decMae4[:5]
-		decPai4 = pai[24:]
-		decPai4 = decPai4[:5]
-		decMae4 = decMae4[index1:]
-		decPai4 = decPai4[:index1]
-		#-----------------------FILHO
-		filho = (intPai + intMae + decPai1 + decMae1 + decPai2 + 
-			decMae2 + decPai3 + decMae3 + decPai4 + decMae4)
-		return filho
-
-
+	

@@ -1,0 +1,903 @@
+-----------------CASO 1:
+
+Tentativa: 1
+Prob: 0.112019539416
+Cross: 0.517968036986
+Filhos: 41
+Geracoes: 89
+Lutadores: 9
+BEST: 100010010001000
+Y:14.17
+X:11.13
+Z:-156.205061068
+9
+--- 1.42689800262 segundos ---
+
+
+
+Tentativa: 2
+Prob: 0.421030371372
+Cross: 0.444333789865
+Filhos: 96
+Geracoes: 416
+Lutadores: 4
+BEST: 100101111011111
+Y:14.23
+X:11.08
+Z:-156.43034162
+15
+--- 4.94511508942 segundos ---
+
+
+
+Tentativa: 3
+Prob: 0.128300593032
+Cross: 0.552983715681
+Filhos: 10
+Geracoes: 435
+Lutadores: 5
+BEST: 011111001100000
+Y:11.37
+X:14.21
+Z:-149.975271983
+9
+--- 0.835812091827 segundos ---
+
+
+
+Tentativa: 4
+Prob: 0.153344066389
+Cross: 0.408585312505
+Filhos: 77
+Geracoes: 102
+Lutadores: 9
+BEST: 100110111101101
+Y:11.13
+X:14.24
+Z:-156.231663507
+8
+--- 2.49561691284 segundos ---
+
+
+
+Tentativa: 5
+Prob: 0.225943140117
+Cross: 0.681597179735
+Filhos: 54
+Geracoes: 61
+Lutadores: 8
+BEST: 111010111010111
+Y:11.15
+X:14.26
+Z:-155.923194092
+14
+--- 0.93546295166 segundos ---
+
+
+
+Tentativa: 6
+Prob: 0.171247298558
+Cross: 0.582803134075
+Filhos: 20
+Geracoes: 446
+Lutadores: 7
+BEST: 001011001001000
+Y:11.1
+X:14.22
+Z:-156.443925381
+14
+--- 2.30770993233 segundos ---
+
+
+
+Tentativa: 7
+Prob: 0.065509844564
+Cross: 0.532306931298
+Filhos: 76
+Geracoes: 82
+Lutadores: 2
+BEST: 111100010100001
+Y:11.12
+X:14.21
+Z:-156.377916593
+16
+--- 0.484474897385 segundos ---
+
+
+
+Tentativa: 8
+Prob: 0.495144741975
+Cross: 0.433010382633
+Filhos: 73
+Geracoes: 472
+Lutadores: 3
+BEST: 101110001111010
+Y:14.21
+X:11.12
+Z:-156.377916593
+9
+--- 3.60261178017 segundos ---
+
+
+
+Tentativa: 9
+Prob: 0.236037494327
+Cross: 0.633059384672
+Filhos: 41
+Geracoes: 284
+Lutadores: 2
+BEST: 111110000000110
+Y:11.08
+X:14.22
+Z:-156.458128607
+7
+--- 1.17967391014 segundos ---
+
+
+
+Tentativa: 10
+Prob: 0.286826800894
+Cross: 0.487407593187
+Filhos: 27
+Geracoes: 34
+Lutadores: 6
+BEST: 100100011100011
+Y:14.26
+X:11.14
+Z:-156.018059801
+4
+--- 0.19593000412 segundos ---
+
+
+
+Tentativa: 11
+Prob: 0.204855677135
+Cross: 0.638650292741
+Filhos: 2
+Geracoes: 376
+Lutadores: 2
+BEST: 000100001011101
+Y:6.74
+X:11.06
+Z:-32.8126975779
+7
+--- 0.249297857285 segundos ---
+
+
+
+Tentativa: 12
+Prob: 0.197695641899
+Cross: 0.863358214695
+Filhos: 60
+Geracoes: 50
+Lutadores: 7
+BEST: 111100011000101
+Y:11.14
+X:14.22
+Z:-156.224053487
+4
+--- 0.79542016983 segundos ---
+
+
+
+Tentativa: 13
+Prob: 0.317044302911
+Cross: 0.484034030723
+Filhos: 59
+Geracoes: 30
+Lutadores: 4
+BEST: 100010000000000
+Y:14.26
+X:11.1
+Z:-156.237641777
+4
+--- 0.215458869934 segundos ---
+
+
+
+Tentativa: 14
+Prob: 0.398902469849
+Cross: 0.924968520424
+Filhos: 50
+Geracoes: 354
+Lutadores: 2
+BEST: 010010111011110
+Y:11.08
+X:14.21
+Z:-156.470087218
+4
+--- 2.24330091476 segundos ---
+
+
+
+Tentativa: 15
+Prob: 0.0776041167157
+Cross: 0.480014407917
+Filhos: 20
+Geracoes: 473
+Lutadores: 4
+BEST: 010110000011010
+Y:14.22
+X:11.07
+Z:-156.441389046
+13
+--- 1.32191300392 segundos ---
+
+
+
+Tentativa: 16
+Prob: 0.270722777731
+Cross: 0.690875414927
+Filhos: 51
+Geracoes: 254
+Lutadores: 2
+BEST: 110100111110100
+Y:11.08
+X:14.25
+Z:-156.327207261
+12
+--- 1.29309201241 segundos ---
+
+
+
+Tentativa: 17
+Prob: 0.00459549846993
+Cross: 0.607129444095
+Filhos: 96
+Geracoes: 19
+Lutadores: 8
+BEST: 111100010100000
+Y:11.14
+X:14.2
+Z:-156.232151021
+15
+--- 0.520604133606 segundos ---
+
+
+
+Tentativa: 18
+Prob: 0.0873488578705
+Cross: 0.523632511922
+Filhos: 79
+Geracoes: 201
+Lutadores: 4
+BEST: 110110001101000
+Y:11.07
+X:14.2
+Z:-156.449497845
+13
+--- 1.97901105881 segundos ---
+
+
+
+Tentativa: 19
+Prob: 0.295963295467
+Cross: 0.642223832592
+Filhos: 71
+Geracoes: 197
+Lutadores: 6
+BEST: 001111000110011
+Y:14.23
+X:11.06
+Z:-156.381016509
+10
+--- 2.91193604469 segundos ---
+
+
+
+Tentativa: 20
+Prob: 0.271894540957
+Cross: 0.574452999358
+Filhos: 15
+Geracoes: 161
+Lutadores: 3
+BEST: 111000111110001
+Y:10.77
+X:14.36
+Z:-147.012104273
+8
+--- 0.305371999741 segundos ---
+
+
+
+Tentativa: 21
+Prob: 0.0753201291771
+Cross: 0.705166670656
+Filhos: 93
+Geracoes: 96
+Lutadores: 7
+BEST: 110110010011101
+Y:11.11
+X:14.18
+Z:-156.366021497
+15
+--- 2.34015798569 segundos ---
+
+
+
+Tentativa: 22
+Prob: 0.339711213095
+Cross: 0.798436020634
+Filhos: 76
+Geracoes: 83
+Lutadores: 4
+BEST: 101010001001110
+Y:11.08
+X:14.24
+Z:-156.386707042
+10
+--- 0.983288049698 segundos ---
+
+
+
+Tentativa: 23
+Prob: 0.135961043183
+Cross: 0.836676715162
+Filhos: 16
+Geracoes: 36
+Lutadores: 6
+BEST: 100110001000010
+Y:11.11
+X:14.11
+Z:-155.679490356
+8
+--- 0.134470939636 segundos ---
+
+
+
+Tentativa: 24
+Prob: 0.0411410899021
+Cross: 0.724621034565
+Filhos: 4
+Geracoes: 360
+Lutadores: 9
+BEST: 011010111111110
+Y:8.02
+X:10.98
+Z:-86.8382983793
+10
+--- 0.641717910767 segundos ---
+
+
+
+Tentativa: 25
+Prob: 0.339932219246
+Cross: 0.861313142804
+Filhos: 31
+Geracoes: 263
+Lutadores: 4
+BEST: 010011100001011
+Y:14.22
+X:11.07
+Z:-156.441389046
+15
+--- 1.35573506355 segundos ---
+
+
+
+Tentativa: 26
+Prob: 0.145849023273
+Cross: 0.493518290026
+Filhos: 29
+Geracoes: 278
+Lutadores: 6
+BEST: 011010000100000
+Y:14.26
+X:11.1
+Z:-156.237641777
+11
+--- 1.663408041 segundos ---
+
+
+
+Tentativa: 27
+Prob: 0.337793767965
+Cross: 0.694140387702
+Filhos: 15
+Geracoes: 438
+Lutadores: 6
+BEST: 110100001111011
+Y:10.88
+X:14.19
+Z:-153.143254497
+12
+--- 1.63287305832 segundos ---
+
+
+
+Tentativa: 28
+Prob: 0.145159985011
+Cross: 0.423003838781
+Filhos: 41
+Geracoes: 480
+Lutadores: 6
+BEST: 111011011001001
+Y:11.04
+X:14.23
+Z:-156.268411366
+15
+--- 3.77306103706 segundos ---
+
+
+
+Tentativa: 29
+Prob: 0.149808924604
+Cross: 0.442255256374
+Filhos: 63
+Geracoes: 136
+Lutadores: 9
+BEST: 111010100001010
+Y:11.1
+X:14.21
+Z:-156.455882907
+7
+--- 2.87707591057 segundos ---
+
+
+
+Tentativa: 30
+Prob: 0.200777381583
+Cross: 0.62719350577
+Filhos: 69
+Geracoes: 47
+Lutadores: 8
+BEST: 101100000100010
+Y:11.07
+X:14.17
+Z:-156.343349133
+14
+--- 0.931097984314 segundos ---
+
+
+
+----------------CASO 2:
+Tentativa: 1
+Prob: 0.0728331335125
+Cross: 0.565997409404
+Filhos: 61
+Geracoes: 265
+Lutadores: 9
+BEST: 00010000001110111010
+Y:0.0
+X:0.0
+Z:-2.0
+11
+--- 5.86218690872 segundos ---
+
+
+
+Tentativa: 2
+Prob: 0.357293651908
+Cross: 0.551980485861
+Filhos: 30
+Geracoes: 321
+Lutadores: 2
+BEST: 10011100111101101000
+Y:-0.01
+X:0.0
+Z:-1.98374369279
+10
+--- 1.12839698792 segundos ---
+
+
+
+Tentativa: 3
+Prob: 0.14022618535
+Cross: 0.516376359392
+Filhos: 82
+Geracoes: 48
+Lutadores: 4
+BEST: 10001010011011100000
+Y:0.0
+X:0.01
+Z:-1.98374369279
+5
+--- 0.562804937363 segundos ---
+
+
+
+Tentativa: 4
+Prob: 0.150097031853
+Cross: 0.431960341332
+Filhos: 86
+Geracoes: 35
+Lutadores: 5
+BEST: 01101101000111111001
+Y:0.0
+X:0.0
+Z:-2.0
+9
+--- 0.501044034958 segundos ---
+
+
+
+Tentativa: 5
+Prob: 0.0645143740584
+Cross: 0.66699057697
+Filhos: 31
+Geracoes: 160
+Lutadores: 6
+BEST: 00001000011111011001
+Y:-0.01
+X:0.0
+Z:-1.98374369279
+10
+--- 1.18900489807 segundos ---
+
+
+
+Tentativa: 6
+Prob: 0.134358638234
+Cross: 0.429698265353
+Filhos: 57
+Geracoes: 386
+Lutadores: 7
+BEST: 10110111010001001100
+Y:0.0
+X:0.0
+Z:-2.0
+9
+--- 5.08869290352 segundos ---
+
+
+
+Tentativa: 7
+Prob: 0.467843604839
+Cross: 0.474584002946
+Filhos: 61
+Geracoes: 387
+Lutadores: 2
+BEST: 01000101100100011001
+Y:0.0
+X:0.0
+Z:-2.0
+13
+--- 2.22742795944 segundos ---
+
+
+
+Tentativa: 8
+Prob: 0.383578594895
+Cross: 0.759488936225
+Filhos: 34
+Geracoes: 472
+Lutadores: 9
+BEST: 10101111001111001110
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 6.11184310913 segundos ---
+
+
+
+Tentativa: 9
+Prob: 0.0410939915009
+Cross: 0.631512388419
+Filhos: 66
+Geracoes: 493
+Lutadores: 3
+BEST: 11000101010110100001
+Y:0.0
+X:0.0
+Z:-2.0
+5
+--- 3.94016218185 segundos ---
+
+
+
+Tentativa: 10
+Prob: 0.377525265983
+Cross: 0.508984727196
+Filhos: 47
+Geracoes: 486
+Lutadores: 4
+BEST: 11111010001011101001
+Y:0.0
+X:0.0
+Z:-2.0
+11
+--- 3.27367782593 segundos ---
+
+
+
+Tentativa: 11
+Prob: 0.0264210757657
+Cross: 0.701709626393
+Filhos: 50
+Geracoes: 377
+Lutadores: 7
+BEST: 11011111100001000011
+Y:0.0
+X:0.0
+Z:-2.0
+9
+--- 5.0147550106 segundos ---
+
+
+
+Tentativa: 12
+Prob: 0.170294637092
+Cross: 0.698274643221
+Filhos: 82
+Geracoes: 381
+Lutadores: 2
+BEST: 11011101110110011101
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 3.60974788666 segundos ---
+
+
+
+Tentativa: 13
+Prob: 0.247612377505
+Cross: 0.947805859704
+Filhos: 57
+Geracoes: 108
+Lutadores: 7
+BEST: 00110010111010011010
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 1.88194799423 segundos ---
+
+
+
+Tentativa: 14
+Prob: 0.135229716273
+Cross: 0.442991247199
+Filhos: 6
+Geracoes: 241
+Lutadores: 4
+BEST: 11110101100010011001
+Y:0.0
+X:0.0
+Z:-2.0
+4
+--- 0.281053066254 segundos ---
+
+
+
+Tentativa: 15
+Prob: 0.27961370634
+Cross: 0.752916170185
+Filhos: 98
+Geracoes: 317
+Lutadores: 7
+BEST: 00010010010111000001
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 9.00994300842 segundos ---
+
+
+
+Tentativa: 16
+Prob: 0.383584398362
+Cross: 0.470361751128
+Filhos: 77
+Geracoes: 402
+Lutadores: 3
+BEST: 11111000011000010110
+Y:0.0
+X:0.0
+Z:-2.0
+8
+--- 3.63084506989 segundos ---
+
+
+
+Tentativa: 17
+Prob: 0.374512504922
+Cross: 0.466102130419
+Filhos: 43
+Geracoes: 471
+Lutadores: 2
+BEST: 10111000000011111010
+Y:0.0
+X:0.0
+Z:-2.0
+8
+--- 2.03202295303 segundos ---
+
+
+
+Tentativa: 18
+Prob: 0.310134259732
+Cross: 0.451512391143
+Filhos: 52
+Geracoes: 85
+Lutadores: 4
+BEST: 11000100100101101001
+Y:-0.01
+X:0.0
+Z:-1.98374369279
+9
+--- 0.620760917664 segundos ---
+
+
+
+Tentativa: 19
+Prob: 0.196589175297
+Cross: 0.530465147941
+Filhos: 69
+Geracoes: 212
+Lutadores: 4
+BEST: 01101001101000110100
+Y:0.0
+X:0.0
+Z:-2.0
+6
+--- 2.15160512924 segundos ---
+
+
+
+Tentativa: 20
+Prob: 0.210132138041
+Cross: 0.755028444244
+Filhos: 29
+Geracoes: 273
+Lutadores: 2
+BEST: 01100000011001101001
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 1.04789018631 segundos ---
+
+
+
+Tentativa: 21
+Prob: 0.301118091271
+Cross: 0.521525544411
+Filhos: 26
+Geracoes: 38
+Lutadores: 5
+BEST: 00010110111101100010
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 0.205260038376 segundos ---
+
+
+
+Tentativa: 22
+Prob: 0.414534586085
+Cross: 0.763370183149
+Filhos: 59
+Geracoes: 63
+Lutadores: 7
+BEST: 11011100100100110001
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 1.0661740303 segundos ---
+
+
+
+Tentativa: 23
+Prob: 0.0652555234402
+Cross: 0.624221809199
+Filhos: 45
+Geracoes: 71
+Lutadores: 5
+BEST: 10111101000010101011
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 0.567867994308 segundos ---
+
+
+
+Tentativa: 24
+Prob: 0.102938109805
+Cross: 0.763410597999
+Filhos: 60
+Geracoes: 421
+Lutadores: 2
+BEST: 00011011011100010100
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 3.14520215988 segundos ---
+
+
+
+Tentativa: 25
+Prob: 0.206479557261
+Cross: 0.638034661741
+Filhos: 9
+Geracoes: 230
+Lutadores: 8
+BEST: 10011111100101111111
+Y:0.0
+X:0.0
+Z:-2.0
+8
+--- 0.748201847076 segundos ---
+
+
+
+Tentativa: 26
+Prob: 0.21703802164
+Cross: 0.63908551594
+Filhos: 5
+Geracoes: 328
+Lutadores: 5
+BEST: 11100111101101111111
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 0.44611287117 segundos ---
+
+
+
+Tentativa: 27
+Prob: 0.425944320097
+Cross: 0.418171964686
+Filhos: 68
+Geracoes: 377
+Lutadores: 3
+BEST: 01011111110111111010
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 2.97846913338 segundos ---
+
+
+
+Tentativa: 28
+Prob: 0.181820084892
+Cross: 0.803010731207
+Filhos: 94
+Geracoes: 363
+Lutadores: 6
+BEST: 11011011100000001000
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 8.31812381744 segundos ---
+
+
+
+Tentativa: 29
+Prob: 0.309340660815
+Cross: 0.463394905344
+Filhos: 44
+Geracoes: 490
+Lutadores: 2
+BEST: 11100110101110100001
+Y:0.0
+X:0.0
+Z:-2.0
+7
+--- 2.09078288078 segundos ---
+
+
+
+Tentativa: 30
+Prob: 0.313155223939
+Cross: 0.414177831511
+Filhos: 64
+Geracoes: 29
+Lutadores: 4
+BEST: 11000110011010110011
+Y:0.0
+X:0.0
+Z:-2.0
+10
+--- 0.238209009171 segundos ---
+
+
+
